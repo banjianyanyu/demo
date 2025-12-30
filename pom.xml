@@ -23,6 +23,7 @@
     </developers>
     <modules>
         <module>ch01_springLife</module>
+        <module>ch02_springAutomatic</module>
     </modules>
     <scm>
         <connection/>
