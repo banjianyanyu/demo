@@ -1,0 +1,4 @@
+#com.demo.Spring_V10.MessageService=com.demo.Spring_V10.HelloMessageService,\
+#  com.demo.Spring_V10.HiMessageService
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.demo.Spring_V11.MessageAutoConfiguration
