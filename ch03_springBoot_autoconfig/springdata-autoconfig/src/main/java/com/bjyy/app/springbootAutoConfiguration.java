@@ -1,0 +1,15 @@
+package com.bjyy.app;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+/**
+ * @author Aurora
+ * @date 2026年01月01日 11:46
+ */
+@SpringBootApplication
+public class springbootAutoConfiguration {
+    public static void main(String[] args) {
+        SpringApplication.run(springbootAutoConfiguration.class,args);
+    }
+}

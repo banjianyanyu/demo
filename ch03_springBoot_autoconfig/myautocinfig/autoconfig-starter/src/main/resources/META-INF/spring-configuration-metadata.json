@@ -1,0 +1,35 @@
+{
+  "groups": [
+    {
+      "name": "xml.reader",
+      "type": "com.bjyy.config.XmlReaderProperites",
+      "sourceType": "com.bjyy.config.XmlReaderProperites"
+    }
+  ],
+  "properties": [
+    {
+      "name": "xml.reader.file",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.bjyy.config.XmlReaderProperites"
+    },
+    {
+      "name": "xml.reader.path",
+      "type": "java.lang.String",
+      "sourceType": "com.bjyy.config.XmlReaderProperites"
+    },
+    {
+      "name": "xml.reader.size",
+      "type": "java.lang.Integer",
+      "sourceType": "com.bjyy.config.XmlReaderProperites"
+    },
+    {
+      "name": "xml.reader.xml",
+      "type": "java.lang.String",
+      "sourceType": "com.bjyy.config.XmlReaderProperites"
+    }
+  ],
+  "hints": [],
+  "ignored": {
+    "properties": []
+  }
+}
