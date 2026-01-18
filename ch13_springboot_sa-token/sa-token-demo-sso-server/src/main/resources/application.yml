@@ -38,14 +38,17 @@ sa-token:
         # 应用名称
         client: sso-client3
         # 允许授权地址
-        allow-url: "*"
+        allow-url: http://sa-sso-client1.com:9003/sso/login
         # 是否接收消息推送
         is-push: true
         # 消息推送地址
         push-url: http://sa-sso-client1.com:9003/sso/pushC
         # 接口调用秘钥 (如果不配置则使用全局默认秘钥)
         secret-key: SSO-C3-kQwIOrYvnXmSDkwEiFngrKidMcdrgKor
-
+    # SSO-Server 配置
+    sso-server:
+      # 主页路由：在 /sso/auth 登录页不指定 redirect 参数时，默认跳转的地址
+      home-route: /home
 
 spring:
   # Redis配置 （SSO模式一和模式二使用Redis来同步会话）
