@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: ai-agent-demo
+
+  ai:
+    alibaba:
+      dashscope:
+        # 从阿里云控制台获取：https://dashscope.console.aliyun.com/
+        api-key: sk-56fff2c27120411289db7f772f6f6d71
+        # 可选模型：qwen-plus, qwen-turbo, qwen-max, qwen-max-longcontext 等
+        chat:
+          options:
+            model: qwen-long-latest
+            temperature: 0.7
+            max-tokens: 2000

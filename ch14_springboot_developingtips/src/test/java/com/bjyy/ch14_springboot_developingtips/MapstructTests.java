@@ -1,7 +1,5 @@
 package com.bjyy.ch14_springboot_developingtips;
 
-import com.bjyy.ch14_springboot_developingtips.ifswitchreconstruction.operation.Operation;
-import com.bjyy.ch14_springboot_developingtips.ifswitchreconstruction.strategypattern.NotificationService;
 import com.bjyy.ch14_springboot_developingtips.mapstruct.entity.Car;
 import com.bjyy.ch14_springboot_developingtips.mapstruct.entity.User;
 import com.bjyy.ch14_springboot_developingtips.mapstruct.entity.UserEntity;

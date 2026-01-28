@@ -1,4 +1,4 @@
-package com.bjyy.ch14_springboot_developingtips.ifswitchreconstruction.strategypattern;
+package com.bjyy.ch14_springboot_developingtips.demo01ifswitchreconstruction.strategypattern;
 
 import org.springframework.stereotype.Component;
 

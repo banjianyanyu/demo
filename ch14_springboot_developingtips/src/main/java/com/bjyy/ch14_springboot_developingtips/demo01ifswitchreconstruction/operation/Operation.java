@@ -1,4 +1,4 @@
-package com.bjyy.ch14_springboot_developingtips.ifswitchreconstruction.operation;
+package com.bjyy.ch14_springboot_developingtips.demo01ifswitchreconstruction.operation;
 
 import java.util.function.BiFunction;
 
