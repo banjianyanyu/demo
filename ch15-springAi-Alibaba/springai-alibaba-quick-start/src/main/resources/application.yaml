@@ -1,0 +1,21 @@
+server:
+  port: 8080
+  servlet:
+    encoding:
+      charset: utf-8
+      enabled: true
+      force: true
+
+spring:
+  ai:
+    dashscope:
+      api-key: sk-56fff2c27120411289db7f772f6f6d71
+      model: qwen-coder-plus-latest  # 可选: qwen-turbo, qwen-plus, qwen-max, qwen-max-1201
+      # 请求配置
+      timeout: 30000  # 毫秒
+      max-tokens: 2000
+      temperature: 0.8
+
+  http:
+    client:
+      read-timeout: 1000000

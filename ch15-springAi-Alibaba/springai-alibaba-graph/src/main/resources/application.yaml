@@ -1,0 +1,21 @@
+# 服务器配置
+server:
+  port: 8889  # 应用服务监听端口，默认8889
+
+spring:
+  # 应用基本信息配置
+  application:
+    name: graph  # 应用名称
+
+  ai:
+    dashscope:
+      api-key: sk-56fff2c27120411289db7f772f6f6d71
+      model: qwen-coder-plus-latest  # 可选: qwen-turbo, qwen-plus, qwen-max, qwen-max-1201
+      # 请求配置
+      timeout: 30000  # 毫秒
+      max-tokens: 2000
+      temperature: 0.8
+
+  http:
+    client:
+      read-timeout: 1000000

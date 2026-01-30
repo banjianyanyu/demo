@@ -1,0 +1,50 @@
+server:
+  port: 8088
+  servlet:
+    encoding:
+      charset: utf-8
+      enabled: true
+      force: true
+
+spring:
+  # 应用基本信息配置
+  application:
+    name: sangeng-redis-rag  # 应用名称
+
+  ai:
+    dashscope:
+      api-key: sk-56fff2c27120411289db7f772f6f6d71
+      model: qwen-coder-plus-latest  # 可选: qwen-turbo, qwen-plus, qwen-max, qwen-max-1201
+      # 请求配置
+      timeout: 30000  # 毫秒
+      max-tokens: 2000
+      temperature: 0.8
+
+    embedding:
+      options:
+        model: qwen3-vl-embedding  # 使用的嵌入模型名称（embedding-3）
+        dimensions: 1024  # 嵌入向量的维度（256维）
+
+    # 向量存储配置
+    vectorstore:
+      redis:
+        initialize-schema: true  # 启动时自动创建Redis向量索引结构（首次部署需开启）
+        prefix: sangeng_rag_prefix  # Redis键名前缀，用于区分不同应用的向量数据
+        index-name: sangeng_rag_index  # Redis向量索引名称
+    mcp:
+      client:
+        sse:
+          connections:
+            server1:
+              url: http://localhost:8080 # mcp服务url
+            fetcher-mcp:
+              url: http://192.168.31.216:3000
+  # 数据源配置
+  data:
+    redis:
+      host: localhost  # Redis服务器地址
+      port: 6379  # Redis服务器连接端口（默认6379）
+
+  http:
+    client:
+      read-timeout: 1000000
